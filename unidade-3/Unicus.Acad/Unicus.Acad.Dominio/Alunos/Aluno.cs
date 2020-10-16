@@ -7,6 +7,7 @@ namespace Unicus.Acad.Dominio
     public class Aluno : Agregado<int>
     {
         public virtual string Nome { get; set; }
+        public virtual Sexo Sexo { get; set; }
 
         public override IList<ValidationResult> Validar()
         {
@@ -15,6 +16,11 @@ namespace Unicus.Acad.Dominio
             if (string.IsNullOrEmpty(Nome))
             {
                 result.Add(new ValidationResult("O nome é obrigatório"));
+            }
+
+            if (Sexo == 0)
+            {
+                result.Add(new ValidationResult("O sexo é obrigatório"));
             }
 
             return result;

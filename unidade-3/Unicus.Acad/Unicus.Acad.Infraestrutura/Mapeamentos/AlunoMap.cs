@@ -9,6 +9,7 @@ namespace Unicus.Acad.Infraestrutura.Mapeamentos
         {
             Id(c => c.Id).GeneratedBy.Native();
             Map(c => c.Nome).Length(100).Not.Nullable();
+            Map(c => c.Sexo).CustomType<Sexo>();
         }
     }
 }

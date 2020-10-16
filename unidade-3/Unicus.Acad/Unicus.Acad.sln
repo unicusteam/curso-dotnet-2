@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicus.Acad.Apresentacao", "Unicus.Acad.Apresentacao\Unicus.Acad.Apresentacao.csproj", "{8C04CD7D-415F-497E-B0FD-AAE26553BB45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicus.Acad.Apresentacao", "Unicus.Acad.Apresentacao\Unicus.Acad.Apresentacao.csproj", "{8C04CD7D-415F-497E-B0FD-AAE26553BB45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicus.Acad.Dominio", "Unicus.Acad.Dominio\Unicus.Acad.Dominio.csproj", "{E06C8330-7D44-4A5B-802F-4865EB2A1A30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicus.Acad.Dominio", "Unicus.Acad.Dominio\Unicus.Acad.Dominio.csproj", "{E06C8330-7D44-4A5B-802F-4865EB2A1A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicus.Acad.Aplicacao", "Unicus.Acad.Aplicacao\Unicus.Acad.Aplicacao.csproj", "{4BA9C4FC-92F0-4279-A43C-207D55967072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicus.Acad.Aplicacao", "Unicus.Acad.Aplicacao\Unicus.Acad.Aplicacao.csproj", "{4BA9C4FC-92F0-4279-A43C-207D55967072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicus.Acad.Infraestrutura", "Unicus.Acad.Infraestrutura\Unicus.Acad.Infraestrutura.csproj", "{AF969609-E3F6-424D-A3C5-437A4B586F5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicus.Acad.Infraestrutura", "Unicus.Acad.Infraestrutura\Unicus.Acad.Infraestrutura.csproj", "{AF969609-E3F6-424D-A3C5-437A4B586F5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apresentação", "1-Apresentação", "{57F29B2E-FBC5-42F8-98AB-2CBAE754CD1B}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domínio", "3-Domínio", "{9E352FBF-CF13-4563-AD7A-17DDBF3EFB50}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infraestrutura", "4-Infraestrutura", "{E01BDA3A-BACD-4DDA-9166-C6D6D3FBA921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicus.Acad.Apresentacao.WinForm", "Unicus.Acad.Apresentacao.WinForm\Unicus.Acad.Apresentacao.WinForm.csproj", "{A0E24B9F-AF8C-4819-9759-1D83407EF48B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unicus.Acad.Apresentacao.WinForm2", "Unicus.Acad.Apresentacao.WinForm2\Unicus.Acad.Apresentacao.WinForm2.csproj", "{A45CCA7C-CC15-4514-A02E-1AF52E1C0434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,14 @@ Global
 		{AF969609-E3F6-424D-A3C5-437A4B586F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF969609-E3F6-424D-A3C5-437A4B586F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF969609-E3F6-424D-A3C5-437A4B586F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E24B9F-AF8C-4819-9759-1D83407EF48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E24B9F-AF8C-4819-9759-1D83407EF48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E24B9F-AF8C-4819-9759-1D83407EF48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E24B9F-AF8C-4819-9759-1D83407EF48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45CCA7C-CC15-4514-A02E-1AF52E1C0434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45CCA7C-CC15-4514-A02E-1AF52E1C0434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45CCA7C-CC15-4514-A02E-1AF52E1C0434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45CCA7C-CC15-4514-A02E-1AF52E1C0434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +62,8 @@ Global
 		{E06C8330-7D44-4A5B-802F-4865EB2A1A30} = {9E352FBF-CF13-4563-AD7A-17DDBF3EFB50}
 		{4BA9C4FC-92F0-4279-A43C-207D55967072} = {7F6BA376-F7E4-4037-A37E-20B4BCF85FEA}
 		{AF969609-E3F6-424D-A3C5-437A4B586F5C} = {E01BDA3A-BACD-4DDA-9166-C6D6D3FBA921}
+		{A0E24B9F-AF8C-4819-9759-1D83407EF48B} = {57F29B2E-FBC5-42F8-98AB-2CBAE754CD1B}
+		{A45CCA7C-CC15-4514-A02E-1AF52E1C0434} = {57F29B2E-FBC5-42F8-98AB-2CBAE754CD1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A21211F4-0052-437F-8F35-71CB4353A7B7}
