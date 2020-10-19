@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Unicus.Acad.Apresentacao.WinForm2.Alunos;
 
 namespace Unicus.Acad.Apresentacao.WinForm2
 {

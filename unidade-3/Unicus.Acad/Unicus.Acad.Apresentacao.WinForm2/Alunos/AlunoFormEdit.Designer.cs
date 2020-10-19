@@ -1,4 +1,4 @@
-﻿namespace Unicus.Acad.Apresentacao.WinForm2
+﻿namespace Unicus.Acad.Apresentacao.WinForm2.Alunos
 {
     partial class AlunoFormEdit
     {
@@ -32,18 +32,21 @@
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label nomeLabel;
             System.Windows.Forms.Label sexoLabel;
+            System.Windows.Forms.Label label1;
             this.confirmarButton = new System.Windows.Forms.Button();
-            this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.turmaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.sexoComboBox = new System.Windows.Forms.ComboBox();
+            this.turmaComboBox = new System.Windows.Forms.ComboBox();
+            this.turmaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             idLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
             sexoLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.idNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // idLabel
@@ -73,23 +76,24 @@
             sexoLabel.TabIndex = 7;
             sexoLabel.Text = "Sexo:";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(56, 119);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(49, 17);
+            label1.TabIndex = 10;
+            label1.Text = "Turma";
+            // 
             // confirmarButton
             // 
-            this.confirmarButton.Location = new System.Drawing.Point(111, 128);
+            this.confirmarButton.Location = new System.Drawing.Point(111, 208);
             this.confirmarButton.Name = "confirmarButton";
             this.confirmarButton.Size = new System.Drawing.Size(94, 33);
             this.confirmarButton.TabIndex = 3;
             this.confirmarButton.Text = "&Confirmar";
             this.confirmarButton.UseVisualStyleBackColor = true;
             this.confirmarButton.Click += new System.EventHandler(this.confirmarButton_Click);
-            // 
-            // alunoBindingSource
-            // 
-            this.alunoBindingSource.DataSource = typeof(Unicus.Acad.Dominio.Aluno);
-            // 
-            // turmaBindingSource
-            // 
-            this.turmaBindingSource.DataSource = typeof(Unicus.Acad.Dominio.Turmas.Turma);
             // 
             // idNumericUpDown
             // 
@@ -98,6 +102,10 @@
             this.idNumericUpDown.Name = "idNumericUpDown";
             this.idNumericUpDown.Size = new System.Drawing.Size(121, 22);
             this.idNumericUpDown.TabIndex = 4;
+            // 
+            // alunoBindingSource
+            // 
+            this.alunoBindingSource.DataSource = typeof(Unicus.Acad.Dominio.Aluno);
             // 
             // nomeTextBox
             // 
@@ -109,18 +117,33 @@
             // 
             // sexoComboBox
             // 
-            this.sexoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.alunoBindingSource, "Sexo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.sexoComboBox.FormattingEnabled = true;
             this.sexoComboBox.Location = new System.Drawing.Point(111, 82);
             this.sexoComboBox.Name = "sexoComboBox";
             this.sexoComboBox.Size = new System.Drawing.Size(121, 24);
             this.sexoComboBox.TabIndex = 8;
             // 
-            // Form1
+            // turmaComboBox
+            // 
+            this.turmaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.alunoBindingSource, "Sexo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.turmaComboBox.DisplayMember = "Nome";
+            this.turmaComboBox.FormattingEnabled = true;
+            this.turmaComboBox.Location = new System.Drawing.Point(111, 112);
+            this.turmaComboBox.Name = "turmaComboBox";
+            this.turmaComboBox.Size = new System.Drawing.Size(121, 24);
+            this.turmaComboBox.TabIndex = 9;
+            // 
+            // turmaBindingSource
+            // 
+            this.turmaBindingSource.DataSource = typeof(Unicus.Acad.Dominio.Turmas.Turma);
+            // 
+            // AlunoFormEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 204);
+            this.ClientSize = new System.Drawing.Size(304, 271);
+            this.Controls.Add(label1);
+            this.Controls.Add(this.turmaComboBox);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idNumericUpDown);
             this.Controls.Add(nomeLabel);
@@ -129,12 +152,12 @@
             this.Controls.Add(this.sexoComboBox);
             this.Controls.Add(this.confirmarButton);
             this.KeyPreview = true;
-            this.Name = "Form1";
+            this.Name = "AlunoFormEdit";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.idNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,6 +170,7 @@
         private System.Windows.Forms.NumericUpDown idNumericUpDown;
         private System.Windows.Forms.TextBox nomeTextBox;
         private System.Windows.Forms.ComboBox sexoComboBox;
+        private System.Windows.Forms.ComboBox turmaComboBox;
     }
 }
 

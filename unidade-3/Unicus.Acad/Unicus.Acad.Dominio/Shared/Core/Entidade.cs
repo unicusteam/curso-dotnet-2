@@ -6,6 +6,10 @@ namespace Unicus.Acad.Dominio.Shared
     public abstract class Entidade<TId>
     {
         public virtual TId Id { get; set; }
-        public abstract IList<ValidationResult> Validar();
+
+        public virtual IList<ValidationResult> Validar()
+        {
+            return new List<ValidationResult>();
+        }
     }
 }

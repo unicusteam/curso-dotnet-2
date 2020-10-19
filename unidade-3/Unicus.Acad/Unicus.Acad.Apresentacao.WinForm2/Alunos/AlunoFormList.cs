@@ -2,7 +2,7 @@
 using Unicus.Acad.Aplicacao;
 using Unicus.Acad.Dominio;
 
-namespace Unicus.Acad.Apresentacao.WinForm2
+namespace Unicus.Acad.Apresentacao.WinForm2.Alunos
 {
     public partial class AlunoFormList : Form
     {

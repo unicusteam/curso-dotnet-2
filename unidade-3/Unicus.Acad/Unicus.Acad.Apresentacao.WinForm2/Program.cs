@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Unicus.Acad.Apresentacao.WinForm2.Cursos;
 using Unicus.Acad.Infraestrutura;
 
 namespace Unicus.Acad.Apresentacao.WinForm2
@@ -15,7 +16,7 @@ namespace Unicus.Acad.Apresentacao.WinForm2
             NhibernateHelper.Configurar();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalForm());
+            Application.Run(new CursoFormEdit());
         }
     }
 }

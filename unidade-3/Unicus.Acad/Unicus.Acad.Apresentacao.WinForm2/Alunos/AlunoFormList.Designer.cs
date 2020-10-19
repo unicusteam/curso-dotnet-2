@@ -1,4 +1,4 @@
-﻿namespace Unicus.Acad.Apresentacao.WinForm2
+﻿namespace Unicus.Acad.Apresentacao.WinForm2.Alunos
 {
     partial class AlunoFormList
     {
